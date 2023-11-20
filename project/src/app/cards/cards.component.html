@@ -1,0 +1,129 @@
+<div>
+
+  <mat-grid-list cols="2" rowHeight="4:1">
+    <div *ngFor="let hacker of HackerNews"  >
+      <mat-grid-tile >
+
+
+        <mat-card :key="hacker" (click)="openDialog(hacker)" class="card">
+
+          <mat-card-header>
+            <div class="card-title">
+              <h3>{{ hacker.title }}</h3>
+            </div>
+          </mat-card-header>
+          <mat-card-content>
+            <p class="card-components">
+              {{ hacker.score }} Points by {{ hacker.by }} | <a
+                href="{{ hacker.url }}"
+                target="_blank"
+                class="card-components"
+                >{{ hacker.url }}</a
+              >
+            </p>
+            <mat-divider></mat-divider>
+            <div class="bottom-beetwen">
+              <div class="time card-components">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                  >
+                    <path
+                      d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"
+                      stroke="#9B9B9B"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M8 4.66666V7.99999H11.3333"
+                      stroke="#9B9B9B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <p>
+                  {{ hacker.formattedTime }}
+                </p>
+                <div class="star">
+                  <p>tranding</p>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <button class="button">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M14 8C14 11.3137 11.3137 14 8 14C6.81929 14 5.71824 13.659 4.78998 13.07L2 14L2.92999 11.21C2.34104 10.2818 2 9.18071 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8Z"
+                        stroke="#FF6600"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M10.6667 8H10.6687V8.002H10.6667V8Z"
+                        stroke="#FF6600"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M8 8H8.002V8.002H8V8Z"
+                        stroke="#FF6600"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M5.33333 8H5.33533V8.002H5.33333V8Z"
+                        stroke="#FF6600"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <p>{{hacker.kids.length}} Comment</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M3.33333 8H12.6667"
+                        stroke="#FF6600"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M8.66667 4L12.6667 8L8.66667 12"
+                        stroke="#FF6600"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </mat-card-content>
+        </mat-card>
+
+
+      </mat-grid-tile>
+    </div>
+  </mat-grid-list>
+</div>

@@ -1,0 +1,123 @@
+.modal-component {
+  display: inline-flex;
+  padding: 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 915px;
+
+}
+
+.box-hacker {
+  width: 100%;
+}
+
+.box-comment {
+
+  width: 100%;
+}
+
+.mat-comment {
+  border-radius: 6px;
+  background: #F4F4F4;
+  margin: 5px;
+}
+
+.comment-text {
+
+  width: auto;
+
+}
+
+.list-box {
+  padding: 20px;
+}
+
+.text-by p {
+
+  word-break: break-all;
+}
+
+.time-comment {
+
+  margin: 5px;
+
+
+}
+
+.flex {
+
+  display: flex;
+  margin: 2px;
+  width: auto;
+
+}
+
+.flex-right {
+  flex: auto;
+}
+
+.flex-left {
+  display: flex;
+  align-items: center;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.card-title {
+  color: #242424;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  width: 814px;
+}
+
+.card-components {
+  padding: 8px;
+  color: #808080;
+
+  font-size: 12px;
+  font-weight: 400;
+
+}
+
+.bottom-beetwen {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.star {
+  padding: 2px 10px;
+  border-radius: 4px;
+
+  font-size: 12px;
+
+  font-weight: 500;
+
+}
+
+.center-time{
+  display: flex;
+  align-items: center;
+}
+.button {
+  display: flex;
+  padding: 8px 10px;
+  align-items: center;
+
+  border-radius: 6px;
+  border: none;
+  justify-content: end;
+  background: #ffffff;
+color: #808080;
+}

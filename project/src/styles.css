@@ -1,0 +1,19 @@
+/* global styling */
+html,*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body{
+    background: #f0efef;
+}
+
+button{
+ cursor: pointer;
+}
+
+a{
+  text-decoration: none;
+}
